@@ -28,12 +28,10 @@
     <div id="particles-js"></div>
     <div class="hearts-container" id="hearts-container"></div>
     
-    <button class="music-toggle" id="musicToggle" aria-label="Toggle Background Music">
-        <i class="fas fa-music"></i> <span id="musicStatus">Music On</span>
-    </button>
-    <!-- Reliable sad piano audio from Wikimedia -->
-    <audio id="bgMusic" loop>
-        <source src="https://upload.wikimedia.org/wikipedia/commons/f/f6/Erik_Satie_-_Gymnop%C3%A9die_No._1.ogg" type="audio/ogg">
+
+    <!-- Background Music -->
+    <audio id="bgMusic" loop autoplay>
+        <source src="Justin Bieber - Sorry (SPOTISAVER).mp3" type="audio/mpeg">
     </audio>
 
     <main class="container">
@@ -98,6 +96,18 @@
             </div>
         </section>
 
+        <!-- Without You Section -->
+        <section class="section without-you glass-panel hidden" id="without-you">
+            <h2 class="section-title">When You're Upset...</h2>
+            <div class="divider"></div>
+            <div class="content-box">
+                <i class="fas fa-cloud-moon quote-icon" style="color: var(--color-rose-gold-dark);"></i>
+                <p class="text">
+                    Seeing you hurt is the worst feeling in the world. When you're upset with me, everything loses its color. My days feel incredibly long and my mind can't stop replaying how I let you down. I hate being the reason behind your sadness, because all I ever want is to be the reason behind your happiness.
+                </p>
+            </div>
+        </section>
+
         <!-- Accountability Section -->
         <section class="section accountability glass-panel hidden" id="accountability">
             <h2 class="section-title">No Excuses</h2>
@@ -132,6 +142,29 @@
                 <div class="card">
                     <div class="icon-wrap"><i class="fas fa-crown"></i></div>
                     <p>You mean more to me than any game, joke, or fleeting moment of laughter.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Future Section -->
+        <section class="section future glass-panel hidden" id="future">
+            <h2 class="section-title">Our Future</h2>
+            <div class="divider"></div>
+            <div class="reasons-grid">
+                <div class="reason-card">
+                    <div class="card-icon-wrap"><i class="fas fa-route"></i></div>
+                    <h3>Growing Together</h3>
+                    <p>I want to learn from my mistakes and be a better partner for you every single day.</p>
+                </div>
+                <div class="reason-card">
+                    <div class="card-icon-wrap"><i class="fas fa-seedling"></i></div>
+                    <h3>Building a Life</h3>
+                    <p>You are my endgame. I want to build a beautiful, peaceful life with you.</p>
+                </div>
+                <div class="reason-card">
+                    <div class="card-icon-wrap"><i class="fas fa-infinity"></i></div>
+                    <h3>Forever</h3>
+                    <p>No matter the hurdles, I choose you today, tomorrow, and forever.</p>
                 </div>
             </div>
         </section>
