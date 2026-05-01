@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>I'm Truly Sorry ❤️</title>
+    <meta name="description" content="A sincere apology.">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Welcome Overlay to allow autoplay -->
+    <div id="welcomeOverlay" class="welcome-overlay">
+        <div class="welcome-content">
+            <div class="envelope-icon"><i class="fas fa-envelope-open-text"></i></div>
+            <h2 class="welcome-title">I have something to say...</h2>
+            <p class="welcome-subtitle">Please tap to open</p>
+            <button id="enterBtn" class="premium-btn enter-btn">Enter <i class="fas fa-arrow-right"></i></button>
+        </div>
+    </div>
+
+    <!-- Glowing Background Orbs -->
+    <div class="bg-orb orb-1"></div>
+    <div class="bg-orb orb-2"></div>
+    <div class="bg-orb orb-3"></div>
+
+    <div id="particles-js"></div>
+    <div class="hearts-container" id="hearts-container"></div>
+    
+    <button class="music-toggle" id="musicToggle" aria-label="Toggle Background Music">
+        <i class="fas fa-music"></i> <span id="musicStatus">Music On</span>
+    </button>
+    <!-- Reliable sad piano audio from Wikimedia -->
+    <audio id="bgMusic" loop>
+        <source src="https://upload.wikimedia.org/wikipedia/commons/f/f6/Erik_Satie_-_Gymnop%C3%A9die_No._1.ogg" type="audio/ogg">
+    </audio>
+
+    <main class="container">
+        <!-- Hero Section -->
+        <section class="section hero glass-panel hidden" id="hero">
+            <h1 class="title">I’m Truly Sorry <span class="heart-icon">❤️</span></h1>
+            <div class="divider"></div>
+            <p class="subtitle">I hurt you, and I regret it deeply.</p>
+            <div class="scroll-indicator">
+                <p>Scroll down</p>
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </section>
+
+        <!-- Message Section -->
+        <section class="section message glass-panel hidden" id="message">
+            <div class="content-box">
+                <i class="fas fa-quote-left quote-icon"></i>
+                <p class="text">
+                    I know I hurt you when I joked and insulted you in front of others. It was thoughtless and wrong, and you absolutely didn’t deserve that. I wasn’t thinking about your feelings in that moment, and looking back, it breaks my heart knowing I made you feel anything less than cherished. I regret it deeply, more than words can express.
+                </p>
+            </div>
+        </section>
+        
+        <!-- Poem Section (New) -->
+        <section class="section poem glass-panel hidden" id="poem">
+            <i class="fas fa-feather-alt elegant-icon"></i>
+            <h2 class="section-title">For You, My Love</h2>
+            <div class="divider"></div>
+            <div class="poem-text">
+                <p>I never meant to cause you pain,<br>
+                Or let my careless words remain.<br>
+                You are the light that guides my way,<br>
+                My brightest star, my sunlit day.</p>
+                <p>I promise now, and forevermore,<br>
+                To be the one that you adore.<br>
+                To guard your heart, to hold you near,<br>
+                And wipe away every single tear.</p>
+            </div>
+        </section>
+
+        <!-- Why I Love You Section -->
+        <section class="section reasons glass-panel hidden" id="reasons">
+            <h2 class="section-title">What You Mean To Me</h2>
+            <div class="divider"></div>
+            <div class="reasons-grid">
+                <div class="reason-card">
+                    <div class="card-icon-wrap"><i class="fas fa-smile-beam"></i></div>
+                    <h3>Your Smile</h3>
+                    <p>It brightens even my darkest days and brings so much joy into my life.</p>
+                </div>
+                <div class="reason-card">
+                    <div class="card-icon-wrap"><i class="fas fa-heart"></i></div>
+                    <h3>Your Kindness</h3>
+                    <p>You have the most beautiful soul, always caring and gentle with everyone.</p>
+                </div>
+                <div class="reason-card">
+                    <div class="card-icon-wrap"><i class="fas fa-star"></i></div>
+                    <h3>Everything</h3>
+                    <p>You are my favorite person, my safe space, and my best friend.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Accountability Section -->
+        <section class="section accountability glass-panel hidden" id="accountability">
+            <h2 class="section-title">No Excuses</h2>
+            <div class="divider"></div>
+            <div class="list-container">
+                <p class="list-item"><i class="fas fa-check-circle"></i> <span>I take full responsibility for my actions.</span></p>
+                <p class="list-item"><i class="fas fa-check-circle"></i> <span>I understand why you felt hurt and embarrassed.</span></p>
+                <p class="list-item"><i class="fas fa-check-circle"></i> <span>I know that a joke is never worth sacrificing your comfort and happiness.</span></p>
+            </div>
+        </section>
+
+        <!-- Our Memories Section -->
+        <section class="section memories glass-panel hidden" id="memories">
+            <h2 class="section-title">You Are Irreplaceable</h2>
+            <p class="subtitle" style="margin-bottom: 30px;">I don't want to lose the beautiful moments we share.</p>
+            
+            <div class="photo-frame">
+                <img src="./couple_memories.jpeg" alt="Us Together" class="couple-photo">
+                <div class="photo-caption">My favorite place is right beside you.</div>
+            </div>
+        </section>
+
+        <!-- Promise Section -->
+        <section class="section promise glass-panel hidden" id="promise">
+            <h2 class="section-title">My Promise to You</h2>
+            <div class="divider"></div>
+            <div class="promise-cards">
+                <div class="card">
+                    <div class="icon-wrap"><i class="fas fa-hands-holding-heart"></i></div>
+                    <p>I promise to respect you, support you, and never put you down again, especially in front of others.</p>
+                </div>
+                <div class="card">
+                    <div class="icon-wrap"><i class="fas fa-crown"></i></div>
+                    <p>You mean more to me than any game, joke, or fleeting moment of laughter.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Closing Section -->
+        <section class="section closing glass-panel hidden" id="closing">
+            <h2 class="closing-title">Please forgive me ❤️</h2>
+            <button class="premium-btn" id="forgiveBtn">
+                Give Me Another Chance <i class="fas fa-heart"></i>
+            </button>
+            <div class="success-message" id="successMessage">
+                Thank you for your grace. I love you! ❤️
+            </div>
+        </section>
+    </main>
+
+    <!-- Libraries -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
